@@ -1,0 +1,10 @@
+{
+  "name": "fl-design-tokens",
+  "version": "1.0.0",
+  "license": "MIT",
+  "description": "FutureLearn Design Tokens",
+  "repository": "https://github.com/futurelearn/fl-design-tokens",
+  "devDependencies": {
+    "style-dictionary": "^2.8.3"
+  }
+}
