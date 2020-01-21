@@ -1,0 +1,6 @@
+{
+  "easing": {
+    "static": { "value": "linear" },
+    "motion": { "value": "ease-out" }
+  }
+}

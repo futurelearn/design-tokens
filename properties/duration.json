@@ -1,0 +1,7 @@
+{
+  "time": {
+    "short": { "value": 300 },
+    "medium": { "value": 400 },
+    "long": { "value": 600 }
+  }
+}
