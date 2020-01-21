@@ -6,5 +6,8 @@
   "repository": "https://github.com/futurelearn/fl-design-tokens",
   "devDependencies": {
     "style-dictionary": "^2.8.3"
+  },
+  "scripts": {
+    "build": "node ./build.js"
   }
 }
