@@ -11,7 +11,8 @@ const config = {
         },
         {
           "destination": "_custom-properties.scss",
-          "format": "css/variables"
+          "format": "css/variables",
+          "filter": (token) => !["breakpoint"].includes(token.attributes.category)
         }
       ]
     },
