@@ -1,0 +1,12 @@
+{
+  "breakpoint": {
+    "type-scale-medium": { "value": 680 },
+    "type-scale-large": { "value": 1695 },
+    "small": { "value": 480 },
+    "medium": { "value": 648 },
+    "large": { "value": 900 },
+    "xlarge": { "value": 1280 },
+    "xxlarge": { "value": 1600 },
+    "comments": { "value": 1392 }
+  }
+}

@@ -31,6 +31,15 @@ const config = {
           "destination": "easings.js",
           "format": "javascript/exports",
           "filter": (token) => token.attributes.category === 'easing',
+        },
+        {
+          "destination": "breakpoints.js",
+          "format": "javascript/exports",
+          "filter": {
+            "attributes": {
+              "category": "breakpoint"
+            }
+          }
         }
       ]
     },
