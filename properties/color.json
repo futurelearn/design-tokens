@@ -1,0 +1,33 @@
+{
+  "color": {
+    "fl": {
+      "black": { "value": "#3a343a" },
+      "white": { "value": "#ffffff" },
+      "dark-grey": { "value": "#393b42" },
+      "cool-grey": { "value": "#4a4d55" },
+      "medium-grey": { "value": "#727376" },
+      "soft-grey": { "value": "#cacacc" },
+      "light-grey": { "value": "#ededee" },
+      "gainsboro-grey": { "value": "#fafafa" },
+      "blue": { "value": "#2541fc" },
+      "ultramarine": { "value": "#5000e2" },
+      "purple": { "value": "#8700cd" },
+      "violet": { "value": "#b100bc" },
+      "pink": { "value": "#de00a5" },
+      "coral": { "value": "#ff4a6e" },
+      "orange": { "value": "#ff8151" },
+      "gold": { "value": "#ffaa54" },
+      "yellow": { "value": "#fecb51" }
+    },
+    "off-brand": {
+      "green": { "value": "#45cc37", "comment": "course creator alerts only" },
+      "facebook-blue": { "value": "#3b5999" },
+      "twitter-blue": { "value": "#55acee" },
+      "linkedin-blue": { "value": "#0077b5" },
+      "whatsapp-green": { "value": "#128c7e" },
+      "great-campaign-color": { "value": "#ffc288" },
+      "great-campaign-color-light": { "value": "#ffe49e" },
+      "cyber-discovery":  { "value": "#0d2332" }
+    }
+  }
+}
