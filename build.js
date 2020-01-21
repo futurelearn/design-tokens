@@ -14,7 +14,26 @@ const config = {
           "format": "css/variables"
         }
       ]
-    }
+    },
+    "js": {
+      "transforms": [
+        "attribute/cti",
+        "name/ti/camel"
+      ],
+      "buildPath": "build/js/",
+      "files": [
+        {
+          "destination": "durations.js",
+          "format": "javascript/es6",
+          "filter": (token) => token.attributes.category === 'time',
+        },
+        {
+          "destination": "easings.js",
+          "format": "javascript/es6",
+          "filter": (token) => token.attributes.category === 'easing',
+        }
+      ]
+    },
   }
 };
 
