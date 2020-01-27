@@ -30,6 +30,12 @@ const config = {
           "format": "scss/map-flat",
           "mapName": "breakpoints",
           "filter": (token) => token.attributes.category === 'breakpoint',
+        },
+        {
+          "destination": "_colours.scss",
+          "format": "scss/map-flat",
+          "mapName": "colours",
+          "filter": (token) => token.attributes.category === 'color',
         }
       ]
     },
