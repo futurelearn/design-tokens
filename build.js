@@ -1,3 +1,5 @@
+const _ = require('lodash');
+
 const config = {
   "source": ["properties/**/*.json"],
   "platforms": {
@@ -13,6 +15,21 @@ const config = {
           "destination": "_custom-properties.scss",
           "format": "css/variables",
           "filter": (token) => !["breakpoint"].includes(token.attributes.category)
+        }
+      ]
+    },
+    "scss/map": {
+      "transforms": [
+        "attribute/cti",
+        "name/ti/kebab",
+      ],
+      "buildPath": "build/scss/",
+      "files": [
+        {
+          "destination": "_breakpoints.scss",
+          "format": "scss/map-flat",
+          "mapName": "breakpoints",
+          "filter": (token) => token.attributes.category === 'breakpoint',
         }
       ]
     },
@@ -48,6 +65,14 @@ const config = {
 };
 
 const StyleDictionary = require('style-dictionary').extend(config);
+
+StyleDictionary.registerTransform({
+  name: 'name/ti/kebab',
+  type: 'name',
+  transformer: (prop, options) => {
+    return _.kebabCase([options.prefix].concat(prop.path.slice(1)).join(' '));
+  }
+});
 
 StyleDictionary.registerFormat({
   name: 'javascript/exports',
