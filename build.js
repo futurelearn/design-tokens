@@ -24,12 +24,12 @@ const config = {
       "files": [
         {
           "destination": "durations.js",
-          "format": "javascript/es6",
+          "format": "javascript/exports",
           "filter": (token) => token.attributes.category === 'time',
         },
         {
           "destination": "easings.js",
-          "format": "javascript/es6",
+          "format": "javascript/exports",
           "filter": (token) => token.attributes.category === 'easing',
         }
       ]
@@ -38,4 +38,18 @@ const config = {
 };
 
 const StyleDictionary = require('style-dictionary').extend(config);
+
+StyleDictionary.registerFormat({
+  name: 'javascript/exports',
+  formatter: function(dictionary) {
+    return dictionary.allProperties.map(prop => {
+      let output = `module.exports.${prop.name} = ${JSON.stringify(prop.value)};`;
+      if (prop.comment) {
+        output = output.concat(' // ' + prop.comment);
+      }
+      return output;
+    }).join('\n');
+  }
+});
+
 StyleDictionary.buildAllPlatforms();
