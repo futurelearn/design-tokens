@@ -87,6 +87,25 @@ const config = {
         }
       ]
     },
+    "sketch": {
+      "transforms": [
+        "attribute/cti",
+        "name/human",
+        "color/sketch"
+      ],
+      "buildPath": "build/sketch/",
+      "files": [
+        {
+          "destination": "tokens.sketchpalette",
+          "format": "sketch/palette/v2",
+          "filter": {
+            "attributes": {
+              "category": "color"
+            }
+          }
+        }
+      ]
+    },
   }
 };
 
