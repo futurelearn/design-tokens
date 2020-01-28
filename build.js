@@ -22,6 +22,7 @@ const config = {
       "transforms": [
         "attribute/cti",
         "name/ti/kebab",
+        "time/seconds",
       ],
       "buildPath": "build/scss/",
       "files": [
@@ -36,6 +37,18 @@ const config = {
           "format": "scss/map-flat",
           "mapName": "colours",
           "filter": (token) => token.attributes.category === 'color',
+        },
+        {
+          "destination": "_durations.scss",
+          "format": "scss/map-flat",
+          "mapName": "durations",
+          "filter": (token) => token.attributes.category === 'time',
+        },
+        {
+          "destination": "_easings.scss",
+          "format": "scss/map-flat",
+          "mapName": "easings",
+          "filter": (token) => token.attributes.category === 'easing',
         }
       ]
     },
