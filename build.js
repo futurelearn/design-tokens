@@ -23,6 +23,7 @@ const config = {
         "attribute/cti",
         "name/ti/kebab",
         "time/seconds",
+        "size/rem",
       ],
       "buildPath": "build/scss/",
       "files": [
@@ -49,7 +50,13 @@ const config = {
           "format": "scss/map-flat",
           "mapName": "easings",
           "filter": (token) => token.attributes.category === 'easing',
-        }
+        },
+        {
+          "destination": "_spacings.scss",
+          "format": "scss/map-flat",
+          "mapName": "spacings",
+          "filter": (token) => token.attributes.type === 'space',
+        },
       ]
     },
     "js": {
