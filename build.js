@@ -67,6 +67,11 @@ const config = {
       "buildPath": "build/js/",
       "files": [
         {
+          "destination": "colours.js",
+          "format": "javascript/exports",
+          "filter": (token) => token.attributes.category === 'color',
+        },
+        {
           "destination": "durations.js",
           "format": "javascript/exports",
           "filter": (token) => token.attributes.category === 'time',
