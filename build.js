@@ -34,9 +34,9 @@ const config = {
           "filter": (token) => token.attributes.category === 'breakpoint',
         },
         {
-          "destination": "_colours.scss",
+          "destination": "_colors.scss",
           "format": "scss/map-flat",
-          "mapName": "colours",
+          "mapName": "colors",
           "filter": (token) => token.attributes.category === 'color',
         },
         {
@@ -67,7 +67,7 @@ const config = {
       "buildPath": "build/js/",
       "files": [
         {
-          "destination": "colours.js",
+          "destination": "colors.js",
           "format": "javascript/exports",
           "filter": (token) => token.attributes.category === 'color',
         },
