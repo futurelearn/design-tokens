@@ -84,11 +84,7 @@ const config = {
         {
           "destination": "breakpoints.js",
           "format": "javascript/exports",
-          "filter": {
-            "attributes": {
-              "category": "breakpoint"
-            }
-          }
+          "filter": (token) => token.attributes.category === 'breakpoint',
         }
       ]
     },
@@ -103,11 +99,7 @@ const config = {
         {
           "destination": "tokens.sketchpalette",
           "format": "sketch/palette/v2",
-          "filter": {
-            "attributes": {
-              "category": "color"
-            }
-          }
+          "filter": (token) => token.attributes.category === 'color',
         }
       ]
     },
