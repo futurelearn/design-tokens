@@ -91,7 +91,7 @@ const config = {
     "sketch": {
       "transforms": [
         "attribute/cti",
-        "name/human",
+        "name/start-case",
         "color/sketch"
       ],
       "buildPath": "build/sketch/",
@@ -113,6 +113,14 @@ StyleDictionary.registerTransform({
   type: 'name',
   transformer: (prop, options) => {
     return _.kebabCase([options.prefix].concat(prop.path.slice(1)).join(' '));
+  }
+});
+
+StyleDictionary.registerTransform({
+  name: 'name/start-case',
+  type: 'name',
+  transformer: (prop, options) => {
+    return _.startCase(prop.name.replace('-', ' '));
   }
 });
 
