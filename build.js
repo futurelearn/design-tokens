@@ -53,7 +53,7 @@ const config = {
         },
         {
           "destination": "_spacings.scss",
-          "format": "scss/map-flat",
+          "format": "scss/spacings",
           "mapName": "spacings",
           "filter": (token) => token.attributes.type === 'space',
         },
@@ -136,5 +136,17 @@ StyleDictionary.registerFormat({
     }).join('\n');
   }
 });
+
+StyleDictionary.registerFormat({
+  name: 'scss/spacings',
+  formatter: function(dictionary) {
+    let props = dictionary.allProperties.map((prop, index) => {
+      const value = prop.value === '0rem' ? '0' : prop.value;
+      return `  ${index}: ${value}`;
+    }).join(",\n");
+
+    return `$spacings: (\n${props}\n);\n`;
+  }
+})
 
 StyleDictionary.buildAllPlatforms();
