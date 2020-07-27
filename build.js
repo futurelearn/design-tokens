@@ -21,7 +21,7 @@ const config = {
     "scss/map": {
       "transforms": [
         "attribute/cti",
-        "name/ti/kebab",
+        "name/ti/camel",
         "time/seconds",
         "size/rem",
       ],
@@ -107,14 +107,6 @@ const config = {
 };
 
 const StyleDictionary = require('style-dictionary').extend(config);
-
-StyleDictionary.registerTransform({
-  name: 'name/ti/kebab',
-  type: 'name',
-  transformer: (prop, options) => {
-    return _.kebabCase([options.prefix].concat(prop.path.slice(1)).join(' '));
-  }
-});
 
 StyleDictionary.registerTransform({
   name: 'name/start-case',
