@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "license": "MIT",
   "description": "FutureLearn Design Tokens",
-  "repository": "https://github.com/futurelearn/fl-design-tokens",
+  "repository": "https://github.com/futurelearn/design-tokens",
   "devDependencies": {
     "style-dictionary": "^2.8.3"
   },
