@@ -88,6 +88,35 @@ const config = {
         }
       ]
     },
+    "ts": {
+      "transforms": [
+        "attribute/cti",
+        "name/ti/camel"
+      ],
+      "buildPath": "build/ts/",
+      "files": [
+        {
+          "destination": "colors.ts",
+          "format": "ts/enums",
+          "filter": (token) => token.attributes.category === 'color',
+        },
+        {
+          "destination": "durations.ts",
+          "format": "ts/enums",
+          "filter": (token) => token.attributes.category === 'time',
+        },
+        {
+          "destination": "easings.ts",
+          "format": "ts/enums",
+          "filter": (token) => token.attributes.category === 'easing',
+        },
+        {
+          "destination": "breakpoints.ts",
+          "format": "ts/enums",
+          "filter": (token) => token.attributes.category === 'breakpoint',
+        }
+      ]
+    },
     "sketch": {
       "transforms": [
         "attribute/cti",
@@ -146,6 +175,20 @@ StyleDictionary.registerFormat({
     }).join(",\n");
 
     return `$spacings: (\n${props}\n);\n`;
+  }
+});
+
+StyleDictionary.registerFormat({
+  name: 'ts/enums',
+  formatter: function(dictionary) {
+    let props = dictionary.allProperties.map((prop) => {
+      const value = typeof prop.value === 'string' ? `'${prop.value}'` : prop.value;
+      return `  ${_.upperFirst(prop.name)} = ${value},`;
+    }).join("\n");
+
+    const category = dictionary.allProperties[0].attributes.category;
+
+    return `export enum ${_.upperFirst(category)} {\n${props}\n};\n`;
   }
 })
 
