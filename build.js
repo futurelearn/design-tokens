@@ -1,7 +1,7 @@
 const _ = require("lodash");
 
 const config = {
-  source: ["properties/**/*.json"],
+  source: ["tokens/**/*.json"],
   platforms: {
     scss: {
       transformGroup: "scss",
@@ -105,29 +105,29 @@ const StyleDictionary = require("style-dictionary").extend(config);
 StyleDictionary.registerTransform({
   name: "name/ti/kebab",
   type: "name",
-  transformer: (prop, options) => {
-    return _.kebabCase([options.prefix].concat(prop.path.slice(1)).join(" "));
+  transformer: (token, options) => {
+    return _.kebabCase([options.prefix].concat(token.path.slice(1)).join(" "));
   },
 });
 
 StyleDictionary.registerTransform({
   name: "name/start-case",
   type: "name",
-  transformer: (prop, options) => {
-    return _.startCase(prop.name.replace("-", " "));
+  transformer: (token, options) => {
+    return _.startCase(token.name.replace("-", " "));
   },
 });
 
 StyleDictionary.registerFormat({
   name: "javascript/exports",
   formatter: function (dictionary) {
-    return dictionary.allProperties
-      .map((prop) => {
-        let output = `module.exports.${prop.name} = ${JSON.stringify(
-          prop.value
+    return dictionary.allTokens
+      .map((token) => {
+        let output = `module.exports.${token.name} = ${JSON.stringify(
+          token.value
         )};`;
-        if (prop.comment) {
-          output = output.concat(" // " + prop.comment);
+        if (token.comment) {
+          output = output.concat(" // " + token.comment);
         }
         return output;
       })
@@ -138,14 +138,14 @@ StyleDictionary.registerFormat({
 StyleDictionary.registerFormat({
   name: "scss/spacings",
   formatter: function (dictionary) {
-    let props = dictionary.allProperties
-      .map((prop, index) => {
-        const value = prop.value === "0rem" ? "0" : prop.value;
+    let tokens = dictionary.allTokens
+      .map((token, index) => {
+        const value = token.value === "0rem" ? "0" : token.value;
         return `  ${index}: ${value}`;
       })
       .join(",\n");
 
-    return `$spacings: (\n${props}\n);\n`;
+    return `$spacings: (\n${tokens}\n);\n`;
   },
 });
 
