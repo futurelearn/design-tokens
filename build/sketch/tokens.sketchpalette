@@ -4,177 +4,177 @@
   "colors": [
     {
       "name": "Black",
-      "red": "0.23",
-      "green": "0.20",
-      "blue": "0.23",
+      "red": "0.22745",
+      "green": "0.20392",
+      "blue": "0.22745",
       "alpha": 1
     },
     {
       "name": "White",
-      "red": "1.00",
-      "green": "1.00",
-      "blue": "1.00",
+      "red": "1.00000",
+      "green": "1.00000",
+      "blue": "1.00000",
       "alpha": 1
     },
     {
       "name": "Dark Grey",
-      "red": "0.22",
-      "green": "0.23",
-      "blue": "0.26",
+      "red": "0.22353",
+      "green": "0.23137",
+      "blue": "0.25882",
       "alpha": 1
     },
     {
       "name": "Cool Grey",
-      "red": "0.29",
-      "green": "0.30",
-      "blue": "0.33",
+      "red": "0.29020",
+      "green": "0.30196",
+      "blue": "0.33333",
       "alpha": 1
     },
     {
       "name": "Medium Grey",
-      "red": "0.45",
-      "green": "0.45",
-      "blue": "0.46",
+      "red": "0.44706",
+      "green": "0.45098",
+      "blue": "0.46275",
       "alpha": 1
     },
     {
       "name": "Soft Grey",
-      "red": "0.79",
-      "green": "0.79",
-      "blue": "0.80",
+      "red": "0.79216",
+      "green": "0.79216",
+      "blue": "0.80000",
       "alpha": 1
     },
     {
       "name": "Light Grey",
-      "red": "0.93",
-      "green": "0.93",
-      "blue": "0.93",
+      "red": "0.92941",
+      "green": "0.92941",
+      "blue": "0.93333",
       "alpha": 1
     },
     {
       "name": "Gainsboro Grey",
-      "red": "0.98",
-      "green": "0.98",
-      "blue": "0.98",
+      "red": "0.98039",
+      "green": "0.98039",
+      "blue": "0.98039",
       "alpha": 1
     },
     {
       "name": "Blue",
-      "red": "0.15",
-      "green": "0.25",
-      "blue": "0.99",
+      "red": "0.14510",
+      "green": "0.25490",
+      "blue": "0.98824",
       "alpha": 1
     },
     {
       "name": "Ultramarine",
-      "red": "0.31",
-      "green": "0.00",
-      "blue": "0.89",
+      "red": "0.31373",
+      "green": "0.00000",
+      "blue": "0.88627",
       "alpha": 1
     },
     {
       "name": "Purple",
-      "red": "0.53",
-      "green": "0.00",
-      "blue": "0.80",
+      "red": "0.52941",
+      "green": "0.00000",
+      "blue": "0.80392",
       "alpha": 1
     },
     {
       "name": "Violet",
-      "red": "0.69",
-      "green": "0.00",
-      "blue": "0.74",
+      "red": "0.69412",
+      "green": "0.00000",
+      "blue": "0.73725",
       "alpha": 1
     },
     {
       "name": "Pink",
-      "red": "0.87",
-      "green": "0.00",
-      "blue": "0.65",
+      "red": "0.87059",
+      "green": "0.00000",
+      "blue": "0.64706",
       "alpha": 1
     },
     {
       "name": "Coral",
-      "red": "1.00",
-      "green": "0.29",
-      "blue": "0.43",
+      "red": "1.00000",
+      "green": "0.29020",
+      "blue": "0.43137",
       "alpha": 1
     },
     {
       "name": "Orange",
-      "red": "1.00",
-      "green": "0.51",
-      "blue": "0.32",
+      "red": "1.00000",
+      "green": "0.50588",
+      "blue": "0.31765",
       "alpha": 1
     },
     {
       "name": "Gold",
-      "red": "1.00",
-      "green": "0.67",
-      "blue": "0.33",
+      "red": "1.00000",
+      "green": "0.66667",
+      "blue": "0.32941",
       "alpha": 1
     },
     {
       "name": "Yellow",
-      "red": "1.00",
-      "green": "0.80",
-      "blue": "0.32",
+      "red": "0.99608",
+      "green": "0.79608",
+      "blue": "0.31765",
       "alpha": 1
     },
     {
       "name": "Green",
-      "red": "0.27",
-      "green": "0.80",
-      "blue": "0.22",
+      "red": "0.27059",
+      "green": "0.80000",
+      "blue": "0.21569",
       "alpha": 1
     },
     {
       "name": "Facebook Blue",
-      "red": "0.23",
-      "green": "0.35",
-      "blue": "0.60",
+      "red": "0.23137",
+      "green": "0.34902",
+      "blue": "0.60000",
       "alpha": 1
     },
     {
       "name": "Twitter Blue",
-      "red": "0.33",
-      "green": "0.67",
-      "blue": "0.93",
+      "red": "0.33333",
+      "green": "0.67451",
+      "blue": "0.93333",
       "alpha": 1
     },
     {
       "name": "Linkedin Blue",
-      "red": "0.00",
-      "green": "0.47",
-      "blue": "0.71",
+      "red": "0.00000",
+      "green": "0.46667",
+      "blue": "0.70980",
       "alpha": 1
     },
     {
       "name": "Whatsapp Green",
-      "red": "0.07",
-      "green": "0.55",
-      "blue": "0.49",
+      "red": "0.07059",
+      "green": "0.54902",
+      "blue": "0.49412",
       "alpha": 1
     },
     {
       "name": "Great Campaign Color",
-      "red": "1.00",
-      "green": "0.76",
-      "blue": "0.53",
+      "red": "1.00000",
+      "green": "0.76078",
+      "blue": "0.53333",
       "alpha": 1
     },
     {
       "name": "Great Campaign Color Light",
-      "red": "1.00",
-      "green": "0.89",
-      "blue": "0.62",
+      "red": "1.00000",
+      "green": "0.89412",
+      "blue": "0.61961",
       "alpha": 1
     },
     {
       "name": "Cyber Discovery",
-      "red": "0.05",
-      "green": "0.14",
-      "blue": "0.20",
+      "red": "0.05098",
+      "green": "0.13725",
+      "blue": "0.19608",
       "alpha": 1
     }
   ]
