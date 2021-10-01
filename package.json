@@ -5,7 +5,7 @@
   "description": "FutureLearn Design Tokens",
   "repository": "https://github.com/futurelearn/design-tokens",
   "devDependencies": {
-    "style-dictionary": "^2.8.3"
+    "style-dictionary": "^3.0.0"
   },
   "scripts": {
     "build": "node ./build.js"
