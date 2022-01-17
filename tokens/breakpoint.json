@@ -1,7 +1,5 @@
 {
   "breakpoint": {
-    "type-scale-medium": { "value": 680 },
-    "type-scale-large": { "value": 1600 },
     "small": { "value": 480 },
     "medium": { "value": 680 },
     "large": { "value": 900 },

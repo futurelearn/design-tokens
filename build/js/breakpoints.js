@@ -1,5 +1,3 @@
-module.exports.typeScaleMedium = 680;
-module.exports.typeScaleLarge = 1600;
 module.exports.small = 480;
 module.exports.medium = 680;
 module.exports.large = 900;
