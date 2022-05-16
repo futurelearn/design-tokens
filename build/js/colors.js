@@ -8,6 +8,7 @@ module.exports.lightGrey = "#ededee";
 module.exports.gainsboroGrey = "#fafafa";
 module.exports.blue = "#2541fc";
 module.exports.ultramarine = "#5000e2";
+module.exports.navy = "#030138";
 module.exports.purple = "#8700cd";
 module.exports.violet = "#b100bc";
 module.exports.pink = "#de00a5";
