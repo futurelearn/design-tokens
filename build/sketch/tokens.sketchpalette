@@ -143,6 +143,13 @@
       "alpha": 1
     },
     {
+      "name": "Google Blue",
+      "red": "0.27451",
+      "green": "0.53333",
+      "blue": "0.94510",
+      "alpha": 1
+    },
+    {
       "name": "Twitter Blue",
       "red": "0.33333",
       "green": "0.67451",
@@ -175,6 +182,13 @@
       "red": "1.00000",
       "green": "0.89412",
       "blue": "0.61961",
+      "alpha": 1
+    },
+    {
+      "name": "Great Campaign Ribbon",
+      "red": "0.80000",
+      "green": "0.07843",
+      "blue": "0.45490",
       "alpha": 1
     },
     {

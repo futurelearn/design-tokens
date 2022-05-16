@@ -21,11 +21,13 @@
     "off-brand": {
       "green": { "value": "#45cc37", "comment": "course creator alerts only" },
       "facebook-blue": { "value": "#3b5999" },
+      "google-blue": { "value": "#4688f1" },
       "twitter-blue": { "value": "#55acee" },
       "linkedin-blue": { "value": "#0077b5" },
       "whatsapp-green": { "value": "#128c7e" },
       "great-campaign-color": { "value": "#ffc288" },
       "great-campaign-color-light": { "value": "#ffe49e" },
+      "great-campaign-ribbon": { "value": "#cc1474" },
       "cyber-discovery":  { "value": "#0d2332" }
     }
   }
