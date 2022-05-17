@@ -38,7 +38,17 @@ const config = {
           destination: "_colors.scss",
           format: "scss/map-flat",
           mapName: "colors",
-          filter: (token) => token.attributes.category === "color",
+          filter: (token) =>
+            token.attributes.category === "color" &&
+            token.attributes.type !== "off-brand",
+        },
+        {
+          destination: "_off-brand-colors.scss",
+          format: "scss/map-flat",
+          mapName: "off-brand-colors",
+          filter: (token) =>
+            token.attributes.category === "color" &&
+            token.attributes.type === "off-brand",
         },
         {
           destination: "_durations.scss",
