@@ -25,4 +25,3 @@ module.exports.offBrandWhatsappGreen = "#128c7e";
 module.exports.offBrandGreatCampaignColor = "#ffc288";
 module.exports.offBrandGreatCampaignColorLight = "#ffe49e";
 module.exports.offBrandGreatCampaignRibbon = "#cc1474";
-module.exports.offBrandCyberDiscovery = "#0d2332";
