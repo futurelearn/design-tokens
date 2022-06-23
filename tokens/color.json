@@ -27,8 +27,7 @@
       "whatsapp-green": { "value": "#128c7e" },
       "great-campaign-color": { "value": "#ffc288" },
       "great-campaign-color-light": { "value": "#ffe49e" },
-      "great-campaign-ribbon": { "value": "#cc1474" },
-      "cyber-discovery":  { "value": "#0d2332" }
+      "great-campaign-ribbon": { "value": "#cc1474" }
     }
   }
 }
